@@ -1,1 +1,6 @@
-*.sql
+Reconversion 2021 Base de datos GP.docx
+reconvertirHigea.py
+reconvertirSanos.py
+spBDNDiccionarioV13.sql
+spCDHDiccionarioV13.sql
+sp_reconvertirtablas_sanos.sql
