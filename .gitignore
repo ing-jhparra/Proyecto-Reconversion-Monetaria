@@ -6,4 +6,4 @@ reconvertirSanos.py
 spBDNDiccionarioV13.sql
 spCDHDiccionarioV13.sql
 sp_reconvertirtablas_sanos.sql
-~*
+.~lock.*

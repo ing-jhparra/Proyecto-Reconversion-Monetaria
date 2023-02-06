@@ -1,6 +1,6 @@
-﻿**Reconversión Monetaria 2021**
+﻿# **Reconversión Monetaria 2021**
 
-**Introducción** 
+## **Introducción** 
 
 Para el año 2021 en la historia de Venezuela sé llevaría a cabo la tercera reconversión implementada bajo decreto No. 4.553, mediante el cual el Ejecutivo Nacional decretó la nueva expresión monetaria. Dicho decreto fue publicado en la Gaceta Oficial No. 42.185 del 6 de agosto de 2021. 
 
@@ -9,11 +9,11 @@ El siguiente procedimiento intenta describir de manera general los pasos a segui
 Este procedimiento más el documento fue escrito y desarrollado por mi persona, quien estuvo a cargo además del desarrollo del programa en python para actualizar los valores en campos numéricos de ambas base de datos SQL Server y PostgreSQL.
 
 
-**Procedimiento para reconvertir las bases de datos de SQL Server**
+# **Procedimiento para reconvertir las bases de datos de SQL Server**
 
-**Base de Datos PostgreSQL**
+# **Base de Datos PostgreSQL**
 
-**Paso 0. (Preparación)**
+# **Paso 0. (Preparación)**
 
 - Crear copia de seguridad de la base de datos
 - Crear un duplicado de la base de datos sanos : CREATE DATABASE sanos\_bs WITH TEMPLATE sanos OWNER postgres; (Opcional)
@@ -37,50 +37,13 @@ SELECT \* FROM sanos\_diccionario;
 
 **Paso 5.** Desactivar triggers 
 
-
-
-
 **Paso 6.** Ejecutar el programa **reconvertirSanos.py** para iniciar el proceso de reconversión. Desde un terminal de linux y usuario con privilegio root.
-
-
 
 **Paso 7.** Al culminar el proceso, se debe habilitar los triggers
 
-
-
-
-
-
-
-
-
-
-
-
 **Programa reconvertirSanos.py** 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-**Base de Datos Microsoft SQL Server**
+## **Base de Datos Microsoft SQL Server**
 
 **Paso 0. (Preparación)**
 
@@ -94,13 +57,7 @@ SELECT \* FROM sanos\_diccionario;
 
 **Asignación de roles de servidor**
 
-
-
-
 **Asignación de permisos**
-
-
-
 
 **Paso 1.** Crear un procedimiento almacenado en la base de datos a reconvertir
 
@@ -108,43 +65,14 @@ El procedimiento almacenado analiza los objetos, tablas y campos de la base de d
 
 **Paso 2.** Ejecución del procedimiento almacenado **spBDNDiccionario**
 
-
-
-
-
-
 **Paso 3.** Ejecutar el programa python **reconvertirHigea.py** para iniciar el proceso de reconversión. Desde un terminal de linux y usuario con privilegio root.
 
+**Paso 4.** Repetir los pasos para la siguiente base de datos a reconvertir
+
+**Programa reconvertirFundacion.py** 
 
 
 
+*Elaborado : Ing. Jesús Parra*
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-**Paso 3.** Repetir los pasos para la siguiente base de datos a reconvertir
-
-Programa reconvertirFundacion.py 
-
-
-
-Elaborado : Ing. Jesús Parra
-
-Barquisimeto, Venezuela
+*Barquisimeto, Venezuela*
