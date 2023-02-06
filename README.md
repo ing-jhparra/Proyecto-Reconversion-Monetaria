@@ -11,9 +11,9 @@ Este procedimiento más el documento fue escrito y desarrollado por mi persona, 
 
 # **Procedimiento para reconvertir las bases de datos de SQL Server**
 
-# **Base de Datos PostgreSQL**
+## **Base de Datos PostgreSQL**
 
-# **Paso 0. (Preparación)**
+## **Paso 0. (Preparación)**
 
 - Crear copia de seguridad de la base de datos
 - Crear un duplicado de la base de datos sanos : CREATE DATABASE sanos\_bs WITH TEMPLATE sanos OWNER postgres; (Opcional)
@@ -45,7 +45,7 @@ SELECT \* FROM sanos\_diccionario;
 
 ## **Base de Datos Microsoft SQL Server**
 
-**Paso 0. (Preparación)**
+# **Paso 0. (Preparación)**
 
 - Verificar que no existan las tablas **BDNDiccionario** y **CDHDiccionario** en la **tempdb** (Opcional)
 - Crear copia de seguridad de la base de datos
