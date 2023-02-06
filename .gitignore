@@ -1,5 +1,5 @@
-*.docx'
-'Reconversion*
+*.docx
+Reconversion*
 reconvertirHigea.py
 reconvertirSanos.py
 *.sql
